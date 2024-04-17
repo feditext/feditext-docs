@@ -1,0 +1,31 @@
+body {
+  color: #222;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 1rem;
+}
+
+header {
+  border-bottom: 1px solid #222;
+  margin-bottom: 1rem;
+}
+
+footer {
+  border-top: 1px solid #222;
+  margin-top: 1rem;
+}
+
+/* Grid of iPhone 15 screenshots at half size. */
+.iphone15_2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* Put bezels on them. */
+.iphone15_2 img {
+  clip-path: rect(auto round 25px);
+  border: solid 6px black;
+  border-radius: 25px;
+  width: 196.5px;
+  height: 426px;
+}

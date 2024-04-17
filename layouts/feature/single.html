@@ -1,0 +1,14 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+
+  {{ if (gt (countrunes .TableOfContents) 0) }}
+    <aside>
+      <h2>Contents</h2>
+      {{ .TableOfContents }}
+      <hr>
+    </aside>
+  {{ end }}
+
+  {{ .Content }}
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+{{ end }}

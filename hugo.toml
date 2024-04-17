@@ -1,0 +1,16 @@
+baseURL = 'https://feditext.com/'
+languageCode = 'en-US'
+title = 'Feditext'
+
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'Features'
+pageRef = '/feature'
+weight = 20
+
+[markup.goldmark.renderer]
+unsafe = true
