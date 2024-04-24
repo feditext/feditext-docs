@@ -12,5 +12,10 @@ name = 'Features'
 pageRef = '/feature'
 weight = 20
 
+[[menus.main]]
+name = 'Privacy'
+pageRef = '/privacy'
+weight = 30
+
 [markup.goldmark.renderer]
 unsafe = true
